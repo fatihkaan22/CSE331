@@ -1,0 +1,102 @@
+% Created 2020-10-28 Wed 15:46
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\documentclass{article}
+\usepackage{here}
+\usepackage{xcolor}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{parskip}
+\renewcommand\arraystretch{1.4}
+\documentclass[12pt]{report}
+\author{Fatih Kaan Salgır - 171044009}
+\date{}
+\title{CSE 331 Computer Organizations Homework 1}
+\hypersetup{
+ pdfauthor={Fatih Kaan Salgır - 171044009},
+ pdftitle={CSE 331 Computer Organizations Homework 1},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.3.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section*{Question 1}
+\label{sec:org32f5429}
+\begin{itemize}
+\item Decrasing in the wafer cost, will also decrase the cost of the chip.\\
+\end{itemize}
+
+\textbf{Today}:  Wafer cost \(\rightarrow\) 10 000 \$
+
+Wafer cost will decrease 20\% every year 
+
+\textbf{4 years later}:  Wafer cost \(\rightarrow\) \$10000 \texttimes{} 0.8\textsuperscript{4} = 4096 \$
+
+\quad
+
+\begin{itemize}
+\item Yiled is the percantage of good dies from the total number of dies on the wafer. Therefore decrasing in the yeild will increase the cost of the chip.
+\end{itemize}
+
+Yield will decrease 10\% every year
+
+\textbf{4 years later}:  Yield will be \(\rightarrow\) \(0.9^4 = 0.6561\) of the inital yield, which is: \(0.6561 \times 0.8 = 0.52488\)
+
+$$\mbox{Cost per die} = \frac{\mbox{Cost of wafer}}{\mbox{Dies per wafer} \times \mbox{yield}}$$
+
+\begin{flalign*}
+ & \mbox{ Cost per die } = \frac{4096}{120 \times 0.52488} = 65.03\ \$ &
+\end{flalign*}
+
+Cost of single chip manifacturing will be 65.03 \$ after 4 years.
+
+\newpage
+
+\section*{Question 2}
+\label{sec:org97b336e}
+\subsection*{A)}
+\label{sec:org12787a0}
+\[ 
+\mbox{ CPU clock cycles } = \sum\limits_{i=1}^{n} ( \mbox{CPI_i} \times \mbox{C_i} )
+\]
+
+
+\[
+\mbox{ CPU clock cycles_{compiler A}  } = 10^{6} \times ( (50 \times 2) + (10 \times 4) + (2 \times 3) ) = 146 \times 10^{6}\ cycles 
+ \]
+
+\[
+\mbox{ CPU clock cycles_{compiler B}  } = 10^{6} \times ( (80 \times 2) + (5 \times 4) + (1 \times 3) ) = 183 \times 10^{6}\ cycles
+ \]
+
+Compiler A has the lower clock cycles, so it must be faster. Compiler A \(\frac{183 \times 10^6}{146 \times 10^6} = 1.25\) times faster than compiler B.
+
+\subsection*{B)}
+\label{sec:org85a3161}
+
+\begin{align*} 
+  \mbox{ Execution time } &= \mbox{ number of cycles } \times \mbox{ clock cycle time } & \\
+  \mbox{ Clock cycle time } &=  \frac{\mbox{execution time}}{\mbox{number of cycles}} &
+\end{align*} 
+
+\begin{flalign*} 
+  \mbox{ Clock cycle time } = \frac{100 \times 10^{-3} }{146 \times 10^{6}} &= \frac{100}{146} \times 10^{-9} \ seconds & \\
+  \mbox { Clock rate } = \frac{1}{\frac{100}{146} \times 10^{-9}} &= 1.46\  \mbox{GHz}
+\end{flalign*} 
+\end{document}
