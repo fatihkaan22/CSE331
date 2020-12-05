@@ -16,7 +16,7 @@ Wafer cost will decrease 20% every year
 
 Yield will decrease 10% every year
 
-**4 years later**:  Yield will be &rarr; \(0.9^4 = 0.6561\) of the inital yield, which is: \(0.6561 \times 0.8 = 0.52488\)
+**4 years later**:  Yield will be &rarr; $\(0.9^4 = 0.6561\)$ of the inital yield, which is: \(0.6561 \times 0.8 = 0.52488\)
 
 \[\mbox{Cost per die} = \frac{\mbox{Cost of wafer}}{\mbox{Dies per wafer} \times \mbox{yield}}\]
 
