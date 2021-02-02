@@ -1,0 +1,3 @@
+[submodule "hw4/mips32-modified"]
+	path = hw4/mips32-modified
+	url = git@github.com:fatihkaan22/mips32-modified.git
